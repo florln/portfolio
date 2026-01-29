@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title></title>
+  <meta name="description" content="Portfolio Florian, Apprenti Ingénieur edge computing et robitique : projets, compétences et contact." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Navigation principale">
+      <div class="nav__inner container">
+        <a class="brand" href="#top" aria-label="Retour en haut">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__text">PORTFOLIO</span>
+        </a>
+
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="Ouvrir le menu">
+          <span class="nav__toggle-bar" aria-hidden="true"></span>
+          <span class="nav__toggle-bar" aria-hidden="true"></span>
+          <span class="nav__toggle-bar" aria-hidden="true"></span>
+        </button>
+
+        <ul class="nav__menu" id="navMenu">
+          <li><a class="nav__link" href="#home">Maison</a></li>
+          <li><a class="nav__link" href="#about">À propos</a></li>
+          <li><a class="nav__link" href="#portfolio">Portefeuille</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="hero" id="home" aria-label="Accueil">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="globe">
+          <div class="globe__ring globe__ring--1"></div>
+          <div class="globe__ring globe__ring--2"></div>
+          <div class="globe__ring globe__ring--3"></div>
+          <div class="globe__dots"></div>
+          <div class="globe__grid"></div>
+        </div>
+      </div>
+
+      <div class="container hero__content" data-animate>
+        <p class="eyebrow"></p>
+        <h1 class="hero__title">Florian KENGNI SATEBANG</h1>
+        <p class="hero__subtitle">Apprenti Ingénieur edge computing et robotique</p>
+
+      <div class="scroll-indicator" aria-hidden="true">
+        <span>Défiler</span>
+        <span class="scroll-indicator__line"></span>
+      </div>
+    </section>
+  </header>
+
+  <main id="main">
+    <section class="section section--about" id="about" aria-label="À propos de moi">
+      <div class="container">
+        <div class="section__head" data-animate>
+          <h2>À propos de moi</h2>
+          <p class="section__lead">Du Prototypage à la mise en production.</p>
+        </div>
+
+        <div class="about" data-animate>
+          <div class="about__card">
+            <p>
+              Titulaire d’un master 1 en Data et 
+                Intelligence Artificielle, je suis motivé et 
+                passionné par l'électronique, l'internet 
+                des objets connectés et la robotique, j’ai 
+                choisi de me réorienter vers le domaine de 
+                edge computing et systèmes 
+                embarqués afin de bâtir une carrière 
+                d'ingénieur. 
+            </p>
+          </div>
+
+          <div class="about__skills">
+            <h3 class="about__skills-title">Compétences</h3>
+            <div class="skills-grid" role="list">
+              <div class="skill" role="listitem"><i class="fa-solid fa-satellite-dish" aria-hidden="true"></i><span>Solutions IoT(Azure IA/IA embarquée)</span></div>
+              <div class="skill" role="listitem"><i class="fa-brands fa-microsoft" aria-hidden="true"></i><span>Suite Azure IoT</span></div>
+              <div class="skill" role="listitem"><i class="fa-solid fa-code" aria-hidden="true"></i><span>PYTHON; MySQL; JavaScript</span></div>
+              <div class="skill" role="listitem"><i class="fa-solid fa-brain" aria-hidden="true"></i><span>VScode + platformio; Arduino IDE; Proteus</span></div>
+              <div class="skill" role="listitem"><i class="fa-solid fa-people-group" aria-hidden="true"></i><span>Travailler en équipe</span></div>
+            </div>
+          </div>
+
+          <div class="about__bg" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="portfolio" aria-label="Portefeuille">
+      <div class="container">
+        <div class="section__head" data-animate>
+          <h2>Portefeuille</h2>
+          <p class="section__lead">Une sélection de projets IoT, du capteur au cloud.</p>
+        </div>
+
+        <div class="cards" role="list">
+          <article class="card" role="listitem" data-animate>
+            <div class="card__top">
+              <div class="card__icon" aria-hidden="true"><i class="fa-solid fa-seedling"></i></div>
+              <h3 class="card__title"> Contrôle du module ESP32 via une page web et création de son propre wifi </h3>
+            </div>
+            <p class="card__text">Ici, il était question de commander un des voyants (LED)  à travers une simple page web, puis, par la suite, de créer son propre réseau Wi-Fi via un ESP32.</p>
+            <div class="card__meta">
+              <span class="chip">breadboard</span>
+              <span class="chip">ESP32</span>
+              <span class="chip">Prototypage</span>
+            </div>
+          </article>
+
+          <article class="card" role="listitem" data-animate>
+            <div class="card__top">
+              <div class="card__icon" aria-hidden="true"><i class="fa-solid fa-temperature-low"></i></div>
+              <h3 class="card__title"> Conception d’un capteur de température </h3>
+            </div>
+            <p class="card__text">Pour ce projet, il était question de capter la température et l’humidité dans une pièce, puis de remonter ces valeurs sur un afficheur LCD.</p>
+            <div class="card__meta">
+              <span class="chip">DHT11</span>
+              <span class="chip">Module d'affichage LCD 16x2</span>
+              <span class="chip">Step moteur</span>
+            </div>
+          </article>
+
+          <article class="card" role="listitem" data-animate>
+            <div class="card__top">
+              <div class="card__icon" aria-hidden="true"><i class="fa-solid fa-tower-broadcast"></i></div>
+              <h3 class="card__title">Azure IoT Hub et ESP32</h3>
+            </div>
+            <p class="card__text">Diffusion de données en temps réel sur un hub IoT via ESP32 et capteur DHT.</p>
+            <div class="card__meta">
+              <span class="chip">ESP32</span>
+              <span class="chip">Temps réel</span>
+              <span class="chip">IoT Hub</span>
+            </div>
+          </article>
+      
+          <article class="card" role="listitem" data-animate>
+            <div class="card__top">
+              <div class="card__icon" aria-hidden="true"><i class="fa-solid fa-seedling"></i></div>
+              <h3 class="card__title"> Stocker les données de température et d’humidité dans (MySQL) </h3>
+            </div>
+            <p class="card__text">Ici, il était question de stocker dans une base de données, les données de température et d’humidité issues du capteur DHT11.</p>
+            <div class="card__meta">
+              <span class="chip">DHT11</span>
+              <span class="chip">ESP32</span>
+              <span class="chip">MySQL</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--contact" id="contact" aria-label="Contact">
+      <div class="container">
+        <div class="section__head" data-animate>
+          <h2>Contact</h2>
+          <p class="section__lead">Vous avez un projet IoT, une mission ou une idée à prototyper ? Écrivez-moi.</p>
+        </div>
+
+        <div class="contact" data-animate>
+          <div class="contact__card">
+            <h3>Me joindre</h3>
+            <div class="contact__links" aria-label="Liens de contact">
+              <a class="contact__link" href="kengniflo@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span>Email</span></a>
+              <a class="contact__link" href="https://github.com/florln" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i><span>GitHub</span></a>
+              <a class="contact__link" href="www.linkedin.com/in/kengniflo" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a>
+            </div>
+          </div>
+
+          <form class="contact__form" id="contactForm">
+            <div class="field">
+              <label for="name">Nom</label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Votre nom" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="votre@email.com" required />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Décrivez votre besoin..." required></textarea>
+            </div>
+
+            <button class="btn btn--primary" type="submit">Envoyer</button>
+            <p class="form-hint" id="formHint" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
